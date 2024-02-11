@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>  
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="{% static 'css/payment.css' %}">
+    <script type="text/javascript" src="{% static 'js/pay.js' %}" defer></script>
+   
+
+</head>
+<body>
+    <div class="container">
+
+        <form action="">
+    
+            <div class="row">
+    
+                <div class="col">
+    
+                    
+    
+                <div class="col">
+    
+                    <h3 class="title">Détail du paiement</h3>
+    
+                    <div class="inputBox1">
+                        <span>Cartes acceptées :</span>
+                        <input >
+                    </div>
+                    <div class="inputBox">
+                        <span>Nom Et Prénom:</span>
+                        <input type="text" placeholder="">
+                    </div>
+                    <div class="inputBox">
+                        <span>Numéro de carte :</span>
+                        <input type="number" placeholder="1111-2222-3333-4444">
+                    </div>
+                    <div class="inputBox">
+                        <span>CVV :</span>
+                        <input type="text" placeholder="1234">
+                    </div>
+    
+                    <div class="flex">
+                        <div class="inputBox">
+                            <span>année d'expiration :</span>
+                            <input type="number" placeholder="2022">
+                        </div>
+                        <div class="inputBox">
+                            <span>Mois d'expiration :</span>
+                            <input type="text" placeholder="janvier">
+                        </div>
+                    </div>
+    
+                </div>
+        
+            </div>
+            
+            <a type="submit" value="payez maintenant" class="submit-btn" id="button" >payez maintenant</a>
+        </form>
+    </div>
+ 
+    
+    <!-- Modal Section -->
+    
+    <div class="bg-modal">
+        <div class="modal-contents">
+    
+            
+            <i class='fa fa-check-circle' style='color: #19AF83; font-size: 50px'></i>
+    
+            <h2>Merci!</h2>
+            <p>Le paiement est effectué avec succès</p>
+            <a href="http://127.0.0.1:8000/confirmation./"><button type="button">OK</button></a>
+    
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+
+body {
+    background-image: url('/static/images/bg.jpg'); /* Replace with the actual path to your image */
+    background-size: cover;
+    padding-top: 80px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed; /* Optional: Set to fixed if you want the background to remain fixed while scrolling */
+}
+
+
+
+.mail-seccess {
+text-align: center;
+display: center;
+
+}
+.mail-seccess .success-inner {
+display: inline-block;
+}
+.mail-seccess .success-inner h1 {
+font-size: 100px;
+text-shadow: 3px 5px 2px #3333;
+color: #19AF83;
+font-weight: 700;
+}
+.mail-seccess .success-inner h1 span {
+display: block;
+font-size: 25px;
+color: #fff;
+font-weight: 700;
+text-shadow: none;
+margin-top: 20px;
+}
+.mail-seccess .success-inner p {
+padding: 20px 15px;
+color: #fff;
+}
+.mail-seccess .success-inner .btn {
+color: #fff;
+background-color: #19AF83;
+border: 1px solid #19AF83; /* Added border style, width, and color */
+border-radius: 10px;
+}
+.mail-seccess .success-inner .btn:hover {
+color: #19AF83;
+background-color: #ffff;
+border: 1px solid #19AF83;
+border-radius: 10px;
+}

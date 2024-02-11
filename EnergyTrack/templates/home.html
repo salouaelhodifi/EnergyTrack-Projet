@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> EnergiTrack | Maroc</title>
+  {% load static %}
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv=“X-UA-Compatible” content="IE=edge">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <!-- favicons -->
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="{% static 'images/favicons/logo.png' %}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{% static 'images/favicons/logo.png' %}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{% static 'images/favicons/logo.png' %}">
+  <link rel="manifest" href="{% static 'images/favicons/logo.png' %}">
+  <link rel="mask-icon" href="{% static 'images/favicons/safari-pinned-tab.svg' %}" color="#5bbad5">
+  <meta name="theme-color" content="#ffffff">
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  <!-- favicons -->
+  <link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/custom-responsive-style.css' %}">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+  <script type="text/javascript" src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+  <script type="text/javascript" src="{% static 'js/all-plugins.js' %}"></script>
+  <script type="text/javascript" src="{% static 'js/plugin-active.js' %}"></script>
+  <script type="text/javascript" src="{% static 'js/sidebar.js' %}"></script>
+  
+</head>
+
+<body>
+<div class="wrapper">
+
+  <button class="menu-icon" onclick="toggleSidebar()" style="font-size: 30px;">
+    <i class="fas fa-bars" ></i>
+  </button>
+
+
+
+  <aside id="sidebar">
+    <div class="h-100">
+        <div class="sidebar-logo">
+            <a href="home"><img src="static/images/logo2.png" alt=""></a>
+        </div>
+        <!-- Sidebar Navigation -->
+        <ul class="sidebar-nav">
+          <li class="sidebar-header">
+                 
+        </li>
+            <li class="sidebar-item">
+                <a href="#" class="sidebar-link">
+                  <i class="fas fa-home"></i>
+                    Home
+                </a>
+            </li>
+            <li class="sidebar-item">
+              <a href="actualites" class="sidebar-link">
+                <i class="fas fa-newspaper"></i>
+                  Actualités
+              </a>
+          </li>
+            <li class="sidebar-item">
+              <a href="#" class="sidebar-link collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard" aria-expanded="false" aria-controls="dashboard">
+
+                    <i class='fas fa-tachometer-alt'></i>
+                    Dashboard
+                </a>
+                <ul id="dashboard" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                    <li class="sidebar-item">
+                        <a href="dashboard" class="sidebar-link">Dashboard Production</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="consommation" class="sidebar-link">Dashboard Consommation</a>
+                    </li>
+                    <li class="sidebar-item">
+                      <a href="world" class="sidebar-link">Dashboard Énergie Mondiale</a>
+                  </li>
+                </ul>
+            </li>
+            <li class="sidebar-item">
+              <a href="docutheque" class="sidebar-link">
+                <i class="fas fa-download"></i>
+                  Docuthèque
+              </a>
+          </li>
+          
+          <li class="sidebar-item">
+            <a href="about" class="sidebar-link">
+              <i class='fas fa-info-circle'></i>
+                About Us
+            </a>
+        </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+ </aside>
+ <!-- Main content starts here -->
+ <div id="main-content">
+   <!-- Header starts here -->
+   <header id="Header">
+    <nav class="main-navigation">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            
+          
+          </div>
+          <div class="col text-right">
+            <div class="btn">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    
+   </header>
+   <!-- Header ends here -->
+   <!-- Banner starts here -->
+   <section id="HeroBanner">
+    <div id="BannerSlider" class="owl-carousel">
+      <div class="item">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div class="banner-text">
+                <h1>Découvrez qui sommes-nous? <br /> </h1>
+                <p> Explorez notre histoire, nos valeurs et notre engagement envers l'excellence.
+                  <br /> Cliquez pour en apprendre davantage 
+                  <br />sur les personnes et la passion qui animent notre réussite 
+                  <br />au quotidien. </p>
+                <div class="bannet-cta">
+                  <div class="cta-1">
+                    <a href="about">Cliquez ici</a>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div class="banner-text">
+                <h1>Restez informé sur nos dernières actualités en explorant nos <br/>Actualités!</h1>
+                <p>Plongez dans les événements récents, les lancements passionnants et les développements
+                  <br/> inspirants qui façonnent notre parcours. Cliquez ici pour être au cœur de notre actualité et découvrir 
+                  <br/>comment nous évoluons pour mieux vous servir.</p>
+                <div class="bannet-cta">
+                  <div class="cta-1">
+                    <a href="actualites">Cliquez ici</a>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   </section>
+   <!-- Banner ends here -->
+   <!-- Features section starts here -->
+   <section id="Gain">
+    <div class="container">
+      <div class="title text-center">
+        <h3>Découvrez les fonctionnalités inédites de notre plateforme</h3>
+        <p>Notre plateforme offre des fonctionnaliés interactives uniques, comprenant des analyses approfondies, des actualités, et des tableaux de bord, pour une compréhension éclairée du paysage énergétique marocain.</p>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
+          <div class="each-icon box-1">
+            <div class="icon-wrap">
+              <i class="fas fa-newspaper"></i>
+            </div>
+            <div class="icon-text">
+              <h3>Actualités</h3>
+              <p>Découvrez les actualités énergétiques mondiales, en mettant l'accent sur les développements passionnants au Maroc. Explorez les innovations, partenariats et initiatives durables qui redéfinissent le secteur, contribuant à une transition énergétique plus efficace au Maroc.</p>
+             
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
+          <div class="each-icon box-2">
+            <div class="icon-wrap">
+              <i class="fa fa-tachometer-alt"></i>
+            </div>
+            <div class="icon-text">
+              <h3>Dashboard</h3>
+              <p>Explorez nos tableaux de bord dédiés pour une vision complète du secteur énergétique. Avec trois interfaces distinctes, analysez efficacement la consommation, la production, et une carte interactive montrant la répartition mondiale des énergies. </p>
+              
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
+          <div class="each-icon box-3">
+            <div class="icon-wrap">
+              <i class="fa fa-download"></i>
+            </div>
+            <div class="icon-text">
+              <h3>Docuthèque</h3>
+              <p>Découvrez notre Docuthèque, un hub de connaissances accessible dans notre application, offrant des téléchargements rapides de données essentielles. Explorez une variété de ressources, y compris des rapports, livres et documents pertinents pour approfondir votre compréhension du secteur énergétique.</p>
+             
+            </div>
+          </div>
+        </div>
+        
+          </div>
+        </div>
+      </div>
+    </div>
+   </section>
+   <!-- Features section ends here -->
+   <!-- Laptop section starts here -->
+   <section id="Laptop">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 ">
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+          <div class="laptop-text">
+            <h1>Exploration Énergétique <br class="d-none d-lg-none d-xl-block" /> Mondiale</h1>
+            <p>Découvrez la répartition mondiale des énergies à travers une carte interactive. Chaque pays est représenté par des pourcentages colorés, offrant un aperçu immédiat de son mix énergétique. Une expérience visuelle qui éveillera votre curiosité et vous invitera à explorer l'énergie qui alimente notre planète.</p>
+            <a href="world">Découvrir</a>
+          </div>
+        </div>
+      </div>
+    </div>
+   </section>
+   <!-- Laptop section ends here -->
+   <!-- video section starts here -->
+   <section id="Video">
+    <div class="image-wrap">
+      <picture>
+        <source media="(max-width: 767px)" srcset="images/video1.jpg">
+        <img src="static/images/vedio.png" alt="Video Thumbnail">
+      </picture>
+    </div>
+    <div class="video-icon">
+      <h3>Video</h3>
+      <p>Explorez l'avenir énergétique avec EnergyTrackMorocco, à la pointe de l'innovation. Actualités , docuthèque et Tableaux de bord fournissent une compréhension approfondie du secteur énergétique. 
+        <br class="d-none d-lg-none d-xl-block" /></p>
+      <a class="popup-youtube-wst" href="static/images/Energie.mp4"><i class="fas fa-play"></i></a>
+    </div>
+   </section>
+   <!-- video section ends here -->
+   <section id="OurWork" class="clearfix">
+    <div class="container">
+      <div class="title text-center">
+        <h3>Découvrir le secteur de l'énergie</h3>
+        <p>Explorez en détail le secteur de l'énergie en comprenant chaque source énergétique, ainsi qu'en fournissant une vue approfondie sur les projets énergétiques du pays.</p>
+      </div>
+    </div>
+    <div class="filter-list">
+      <ul>
+        <li class="active" data-filter="all">Énergies
+        </li>
+       
+    </div>
+    <div class="filter-box clearfix">
+      <div class="each-box all scale-anm branding">
+        <div class="each-box-img">
+          <img src="static/images/solar.png" alt="">
+        </div>
+        <div class="each-box-text-wap">
+          <div class="each-box-text">
+            <h3>Solaire</h3>
+            <p>L'énergie solaire est une énergie renouvelable obtenue à partir du rayonnement solaire, convertie en électricité par des moyens tels que les panneaux photovoltaïques ou les centrales solaires thermiques.</p>
+            <a title="Read More" href="solar" target="_blank"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="each-box all scale-anm marketing web-design">
+        <div class="each-box-img">
+          <img src="static/images/wind.png" alt="">
+        </div>
+        <div class="each-box-text-wap">
+          <div class="each-box-text">
+            <h3>Éolienne</h3>
+            <p>L'énergie éolienne est une forme d'énergie renouvelable obtenue en convertissant l'énergie cinétique du vent en électricité à l'aide d'éoliennes. Elle contribue à la production d'électricité de manière propre et durable.</p>
+            <a title="Read More" href="wind" target="_blank"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="each-box all scale-anm media">
+        <div class="each-box-img">
+          <img src="static/images/fossile.png" alt="">
+        </div>
+        <div class="each-box-text-wap">
+          <div class="each-box-text">
+            <h3>Fossile</h3>
+            <p>Les énergies fossiles sont des combustibles d'origine organique, tels que le pétrole, le gaz naturel et le charbon, résultant de la décomposition de matières organiques sur des millions d'années.</p>
+            <a title="Read More" href="fossile" target="_blank"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="each-box all scale-anm photography marketing">
+        <div class="each-box-img">
+          <img src="static/images/petrole.png" alt="">
+        </div>
+        <div class="each-box-text-wap">
+          <div class="each-box-text">
+            <h3>Pétrole</h3>
+            <p>L'énergie du pétrole fait référence à l'énergie obtenue par la combustion et la transformation du pétrole brut en divers produits tels que le carburant, le diesel et d'autres dérivés utilisés dans les secteurs du transport, de l'industrie et de la production d'électricité.</p>
+            <a title="Read More" href="petrole" target="_blank"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="each-box all scale-anm web-design branding">
+        <div class="each-box-img">
+          <img src="static/images/renouvlable.png" alt="">
+        </div>
+        <div class="each-box-text-wap">
+          <div class="each-box-text">
+            <h3>Renouvelable</h3>
+            <p>L'énergie renouvelable provient de sources naturelles inépuisables comme le soleil, le vent, l'eau et la biomasse. Elle est considérée comme durable, respectueuse de l'environnement et contribue à réduire la dépendance aux combustibles fossiles.</p>
+            <a title="Read More" href="renouvelable" target="_blank"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="each-box all scale-anm web-design">
+        <div class="each-box-img">
+          <img src="static/images/nucleaire.png" alt="">
+        </div>
+        <div class="each-box-text-wap">
+          <div class="each-box-text">
+            <h3>Nucléaire</h3>
+            <p>L'énergie nucléaire dépend d'un combustible fissile, l'uranium, dont le minerai est contenu dans le sous-sol de la Terre. Elle permet de produire de l'électricité, dans les centrales nucléaires, appelées centrales électronucléaires, grâce à la chaleur dégagée par la fission d'atomes d'uranium.</p>
+            <a title="Read More" href="nucleaire" target="_blank"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="each-box all scale-anm media branding">
+        <div class="each-box-img">
+          <img src="static/images/hydraulique.png" alt="">
+        </div>
+        <div class="each-box-text-wap">
+          <div class="each-box-text">
+            <h3>Hydraulique</h3>
+            <p>L’énergie hydraulique est une énergie renouvelable produite à partir de l’eau dans des centrales hydroélectriques qui permet de produire de l'électricité grâce à la force de l’eau, cette force dépend soit du débit de l’eau soit de la hauteur des chutes d’eau.</p>
+            <a title="Read More" href="hydraulique" target="_blank"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="each-box all scale-anm photography marketing">
+        <div class="each-box-img">
+          <img src="static/images/gaz.png" alt="">
+        </div>
+        <div class="each-box-text-wap">
+          <div class="each-box-text">
+            <h3>Gaz</h3>
+            <p>Désigne la source d'énergie issue de l'exploitation de gisement de gaz naturel (méthane), de gisement d'hydrocarbures (butane, propane), ou de fabrication à partir de composés organiques fossiles ou non (charbon, houille, biogaz, etc).</p>
+            <a title="Read More" href="gaz" target="_blank"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="each-box all scale-anm photography media">
+        <div class="each-box-img">
+          <img src="static/images/charbon.png" alt="">
+        </div>
+        <div class="each-box-text-wap">
+          <div class="each-box-text">
+            <h3>Charbon</h3>
+            <p>C'est une roche fossile, extraite de mines souterraines ou à ciel ouvert, que l'on brûle pour produire de l'énergie. Energie essentielle de la révolution industrielle du XIXe siècle, le charbon est aujourd'hui largement détrônée en France par le pétrole et le gaz.</p>
+            <a title="Read More" href="charbon" target="_blank"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+   </section>
+ <!-- Contact us section starts here -->
+ <section id="ContactUs">
+  <div class="container contact-container">
+    <h3 class="contact-title">prenez contact</h3>
+    <div class="contact-outer-wrapper">
+      <div class="form-wrap">
+        <p>Veuillez remplir ce formulaire pour continuer.</p>
+        <form action="{% url 'contact' %}" method="post">
+          {% csrf_token %}
+          <div class="fname floating-label">
+            <input type="text" required class="floating-input" name="full_name" />
+            <label for="title">Nom Complet</label>
+          </div>
+          <div class="email floating-label">
+            <input type="email" required class="floating-input" name="email" />
+            <label for="email">Email</label>
+          </div>
+          <div class="contact floating-label">
+            <input type="tel" class="floating-input" name="contact" />
+            <label for="email" required>Contact</label>
+          </div>
+          <div class="company floating-label">
+            <input type="text" class="floating-input" name="company" />
+            <label for="email">Entreprise</label>
+          </div>
+          <div class="user-msg floating-label">
+            <textarea type="text" class="floating-input" name="message"></textarea>
+            <label for="message" class="msg-label">Votre Message</label>
+          </div>
+          <div class="submit-btn">
+            <button type="submit">Envoyer</button>
+          </div>
+        </form>
+      </div>
+      <div class="address-block">
+        <p class="add-title">Contact Détailles</p>
+        <div class="c-detail">
+          <div class="c-icon"><i class="fas fa-address-book" aria-hidden="true"></i></div>
+          <div class="c-info">
+            <h4>Addresse</h4>
+            <p>FSJEST,Tanger-Maroc</p>
+          </div>
+        </div>
+        <div class="c-detail">
+          <div class="c-icon"><i class="fas fa-phone-square" aria-hidden="true"></i></div>
+          <div class="c-info">
+            <h4>Téléphone</h4>
+            <p><a href="tell:+1234567890">+1234567890</a></p>
+          </div>
+        </div>
+        <div class="c-detail">
+          <div class="c-icon"><i class="fas fa-envelope" aria-hidden="true"></i></div>
+          <div class="c-info">
+            <h4>Email</h4>
+            <p><a href="mailto:energytrackmorocco@gmail.com">energytrackmorocco@gmail.com</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Contact us section ends here -->
+   <!-- Footer section starts here -->
+   <footer id="Footer">
+    <div class="container text-center">
+      <div class="footer-text ">
+        <p>Abonnez-vous gratuitement à notre newsletter et recevez chaque semaine nos articles par email :          <br class="hidden-lg-down" /></p>
+        <div class="email-box">
+          <form action="{% url 'subscribe' %}" method="post">
+            <input required type="email" name="mail">
+            <label for="email">Email</label>
+            <input class="submit" type="submit" value="">
+          </form>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+            <div class="copy-right">
+              <p>© EnergiTrack Maroc, Inc.</p>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 text-right">
+            <div class="social-share">
+              <ul>
+                <li>
+                  <a href="https://web.facebook.com/people/EnergiTrack-Maroc/61555676254294/?is_tour_dismissed=true"><i class="fab fa-facebook-f"></i></a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/energytrackmaroc?igsh=MW1yMDJtY2hlYWs0aA=="><i class="fab fa-instagram"></i></a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/company/101523811/admin/feed/posts/?feedType=following"><i class="fab fa-linkedin-in"></i></a>
+                </li>
+                <li>
+                  <a href="mailto:energytrackmorocco@gmail.com"><i class="fab fa-google"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    </footer>
+    <!-- Footer section ends here -->
+ </div>
+</div>
+</body>
+
+</html>

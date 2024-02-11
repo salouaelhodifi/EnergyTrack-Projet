@@ -1,0 +1,302 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/style1.css' %}">
+<!--DOCTYPE html-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--==Title========================-->
+    <title>Actualités</title>
+    <!--==CSS==========================-->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <!--==Poppins======================-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!--==Font-Awesome=================-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <script type="text/javascript" src="{% static 'js/sidebar.js' %}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+{% load static %}
+<body>
+    <div class="wrapper">
+
+        <button class="menu-icon" onclick="toggleSidebar()" style="font-size: 30px;">
+          <i class="fas fa-bars"style="color: black;" ></i>
+        </button>
+      
+      
+      
+        <aside id="sidebar">
+          <div class="h-100">
+              <div class="sidebar-logo">
+                  <a href="home">EnergiTrack Maroc</a>
+              </div>
+              <!-- Sidebar Navigation -->
+              <ul class="sidebar-nav">
+                <li class="sidebar-header">
+                       
+              </li>
+                  <li class="sidebar-item">
+                      <a href="http://127.0.0.1:8000/#" class="sidebar-link">
+                        <i class="fas fa-home"></i>
+                          Home
+                      </a>
+                  </li>
+                  <li class="sidebar-item">
+                    <a href="http://127.0.0.1:8000/actualites/" class="sidebar-link">
+                      <i class="fas fa-newspaper"></i>
+                        Actualités
+                    </a>
+                </li>
+                  <li class="sidebar-item">
+                    <a href="#" class="sidebar-link collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard" aria-expanded="false" aria-controls="dashboard">
+      
+                          <i class='fas fa-tachometer-alt'></i>
+                          Dashboard
+                      </a>
+                      <ul id="dashboard" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                          <li class="sidebar-item">
+                              <a href="http://127.0.0.1:8000/dashboard/" class="sidebar-link">Dashboard Production</a>
+                          </li>
+                          <li class="sidebar-item">
+                              <a href="http://127.0.0.1:8000/consommation/" class="sidebar-link">Dashboard Consommation</a>
+                          </li>
+                          <li class="sidebar-item">
+                            <a href="http://127.0.0.1:8000/world/" class="sidebar-link">Dashboard Énergie Mondiale</a>
+                        </li>
+                      </ul>
+                  </li>
+                  <li class="sidebar-item">
+                    <a href="http://127.0.0.1:8000/docutheque/" class="sidebar-link">
+                      <i class="fas fa-download"></i>
+                        Docuthèque
+                    </a>
+                </li>
+                
+                <li class="sidebar-item">
+                  <a href="http://127.0.0.1:8000/about/" class="sidebar-link">
+                    <i class='fas fa-info-circle'></i>
+                      About Us
+                  </a>
+              </li>
+                      </ul>
+                  </li>
+              </ul>
+          </div>
+       </aside>
+    <!--==Blog================================-->
+    <section id="blog">
+
+        <div class="blog-heading">
+            <h3><b>Découvrez les dernières actualités : Restez informés avec Nous</b></h3>
+        </div>
+
+        <!--**container**************-->
+        <div class="blog-box-container">
+        
+            <!-- **box** -->
+            <div class="blog-box">
+                <!--img-->
+                <div class="blog-box-img">
+                    <img alt="blog" src="/static/images/blog-2.png">
+                    <a href="bloc1" class="blog-img-link">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+                <!--text-->
+                <div class="blog-box-text">
+                    <strong>L'énergie éolienne</strong>
+                    <a href="#">AGWEC: L'ÉNERGIE ÉOLIENNE OFFRIRA 174.000 EMPLOIS AU MAROC </a>
+                    <p>L'énergie éolienne ouvre de nouvelles perspectives au Maroc, en matière de souveraineté énergétique, mais également en termes d'emplois.</p>
+                    <div class="blog-author">
+                        <div class="blog-author-img">
+                            <img alt="" src="\static\images\logoac.png"> 
+                        </div>
+                        <div class="blog-author-text">
+                            <strong>EnergiTrack Maroc</strong>
+                            <span>Jan 12, 2024</span>
+                        </div>
+                    </div>
+                </div>
+            </div><!--box-end-->
+
+            <!-- **box** -->
+            <div class="blog-box">
+                <!--img-->
+                <div class="blog-box-img">
+                    <img alt="blog" src="/static/images/bloc-3.jpg">
+                    <a href="bloc2" class="blog-img-link">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+                <!--text-->
+                <div class="blog-box-text">
+                    <strong>L'énergie solaire</strong>
+                    <a href="bloc2">Quatre centrales solaires pour les mines OCP à Khouribga et Benguerir</a>
+                    <p>Revue de presse: OCP Group, le producteur mondial d'engrais phosphatés, prévoit d'installer quatre centrales solaires qui fourniront de l'électricité verte aux mines de l'OCP à Khouribga et Benguerir.</p>
+                    <div class="blog-author">
+                        <div class="blog-author-img">
+                            <img alt="" src="\static\images\logoac.png">
+                        </div>
+                        <div class="blog-author-text">
+                            <strong>EnergiTrack Maroc</strong>
+                            <span>Jan 25, 2024</span>
+                        </div>
+                    </div>
+                </div>
+            </div><!--box-end-->
+
+
+            <!-- **box** -->
+            <div class="blog-box">
+                <!--img-->
+                <div class="blog-box-img">
+                    <img alt="blog" src="/static/images/blog-3.png">
+                    <a href="bloc3" class="blog-img-link">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+                <!--text-->
+                <div class="blog-box-text">
+                    <strong>hydrogène vert</strong>
+                    <a href="#">Le Maroc ambitionne de devenir un producteur majeur d'hydrogène vert</a>
+                    <p>Le Maroc aspire à devenir un acteur majeur de l'hydrogène vert en Afrique du Nord, en misant sur son rôle pionnier dans les années.</p>
+                    <div class="blog-author">
+                        <div class="blog-author-img">
+                            <img alt="" src="/static/images/logoac.png">
+                        </div>
+                        <div class="blog-author-text">
+                            <strong>EnergiTrack Maroc</strong>
+                            <span>Jan 30, 2024</span>
+                        </div>
+                    </div>
+                </div>
+            </div><!--box-end-->
+            <!-- **box** -->
+            <div class="blog-box">
+                <!--img-->
+                <div class="blog-box-img">
+                    <img alt="blog" src="/static/images/blog-4.jpg">
+                    <a href="bloc4" class="blog-img-link">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+                <!--text-->
+                <div class="blog-box-text">
+                    <strong>économie</strong>
+                    <a href="#">Comment le prix de l'énergie va transformer l'économie européenne</a>
+                    <p>Le prix du gaz en particulier et de l'énergie en général n'est pas près de baisser, y compris en 2023 et 2024. </p>
+                    <div class="blog-author">
+                        <div class="blog-author-img">
+                            <img alt="" src="/static/images/logoac.png">
+                        </div>
+                        <div class="blog-author-text">
+                            <strong>EnergiTrack Maroc</strong>
+                            <span>Fév 1, 2024</span>
+                        </div>
+                    </div>
+                </div>
+            </div><!--box-end-->
+            <!-- **box** -->
+            <div class="blog-box">
+                <!--img-->
+                <div class="blog-box-img">
+                    <img alt="blog" src="/static/images/blog-5.jpg">
+                    <a href="bloc5" class="blog-img-link">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+                <!--text-->
+                <div class="blog-box-text">
+                    <strong>électricité</strong>
+                    <a href="#">Prix de l’électricité : 2024 fin tarifs protecteurs en Europe</a>
+                    <p>Les prix de l’électricité sur le marché de gros ont tendance à baisser depuis quelques mois. L’occasion pour les gouvernements européens de lever les aides mises en place durant la crise, quand d’autres y voient un mauvais signal pour le déploiement de la transition énergétique. Tour d’Europe.</p>
+                    <div class="blog-author">
+                        <div class="blog-author-img">
+                            <img alt="" src="/static/images/logoac.png">
+                        </div>
+                        <div class="blog-author-text">
+                            <strong>EnergiTrack Maroc</strong>
+                            <span>Fév 8, 2024</span>
+                        </div>
+                    </div>
+                </div>
+            </div><!--box-end-->
+            <!-- **box** -->
+            <div class="blog-box">
+                <!--img-->
+                <div class="blog-box-img">
+                    <img alt="blog" src="/static/images/blog-6.jpg">
+                    <a href="bloc6" class="blog-img-link">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+                <!--text-->
+                <div class="blog-box-text">
+                    <strong>énergie renouvelable</strong>
+                    <a href="#">2024: l'année d'adoption des énergies renouvelables en Europe ?</a>
+                    <p>Les ressources renouvelables occupent une part croissante du mix énergétique européen, mais de façon inégale selon les nations. Tour d’horizon, à notre façon, des avancées à date en la matière. </p>
+                    <div class="blog-author">
+                        <div class="blog-author-img">
+                            <img alt="" src="/static/images/logoac.png">
+                        </div>
+                        <div class="blog-author-text">
+                            <strong>EnergiTrack Maroc</strong>
+                            <span>Fév 11, 2024</span>
+                        </div>
+                    </div>
+                </div>
+            </div><!--box-end-->
+        
+        </div>
+    
+    </section>
+<!-- Footer section starts here -->
+<footer id="Footer">
+    <div class="container text-center">
+      <div class="footer-text ">
+        <p>Abonnez-vous gratuitement à notre newsletter et recevez chaque semaine nos articles par email :          <br class="hidden-lg-down" /></p>
+        <div class="email-box">
+          <form action="{% url 'subscribe' %}" method="post">
+            <input required type="email" name="mail">
+            <label for="email">Email</label>
+            <input class="submit" type="submit" value="">
+          </form>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+            <div class="copy-right">
+              <p>© EnergiTrack Maroc, Inc.</p>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 text-right">
+            <div class="social-share">
+              <ul>
+                <li>
+                  <a href="https://web.facebook.com/people/EnergiTrack-Maroc/61555676254294/?is_tour_dismissed=true"><i class="fab fa-facebook-f"></i></a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/energytrackmaroc?igsh=MW1yMDJtY2hlYWs0aA=="><i class="fab fa-instagram"></i></a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/company/101523811/admin/feed/posts/?feedType=following"><i class="fab fa-linkedin-in"></i></a>
+                </li>
+                <li>
+                  <a href="mailto:energytrackmorocco@gmail.com"><i class="fab fa-google"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    </footer>
+    <!-- Footer section ends here -->
+</body>
+</html>
+  

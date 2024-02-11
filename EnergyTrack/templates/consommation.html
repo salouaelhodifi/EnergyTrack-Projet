@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="{% static 'js/sidebar.js' %}"></script>
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <title>Dashboard Consommation</title>
+    <style>
+            body {
+            background-color: #FFF; /* Remplacez cette valeur par la couleur exacte de l'arrière-plan de votre tableau */
+            margin: 0;                
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    
+        h1 {
+            text-align: center;
+            margin: 0;
+            color: #421; /* Remplacez cette valeur par la couleur de texte désirée */
+            font-size: 24px; /* Ajustez la taille selon vos besoins */
+        }
+    
+        /* Ajoutez d'autres styles personnalisés ici */
+    </style>
+    
+    
+    <style>
+        .powerbi-frame {
+            width: 142.25%; /* Inverse of 71% zoom */
+            height: 684px; /* Adjust this as needed */
+            border: none;
+            transform: scale(0.70);
+            transform-origin: top left;
+            overflow: hidden;
+        }
+
+        .powerbi-container {
+            overflow: hidden;
+            position: relative;
+            width: 100%;
+            height: 486px; /* Fixed height */
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+
+        <button class="menu-icon" onclick="toggleSidebar()" style="font-size: 30px;">
+            <i class="fas fa-bars" style="color: black;"></i>
+
+        </button>
+      
+      
+      
+        <aside id="sidebar">
+          <div class="h-100">
+            <div class="sidebar-logo">
+                <a href="home">EnergiTrack Maroc</a>
+            </div>
+              <!-- Sidebar Navigation -->
+              <ul class="sidebar-nav">
+                <li class="sidebar-header">
+                       
+              </li>
+                  <li class="sidebar-item">
+                      <a href="http://127.0.0.1:8000/#" class="sidebar-link">
+                        <i class="fas fa-home"></i>
+                          Home
+                      </a>
+                  </li>
+                  <li class="sidebar-item">
+                    <a href="http://127.0.0.1:8000/actualites" class="sidebar-link">
+                      <i class="fas fa-newspaper"></i>
+                        Actualités
+                    </a>
+                </li>
+                  <li class="sidebar-item">
+                    <a href="#" class="sidebar-link collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard" aria-expanded="false" aria-controls="dashboard">
+      
+                          <i class='fas fa-tachometer-alt'></i>
+                          Dashboard
+                      </a>
+                      <ul id="dashboard" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                          <li class="sidebar-item">
+                              <a href="http://127.0.0.1:8000/dashboard/" class="sidebar-link">Dashboard Production</a>
+                          </li>
+                          <li class="sidebar-item">
+                              <a href="http://127.0.0.1:8000/consommation/" class="sidebar-link">Dashboard Consommation</a>
+                          </li>
+                          <li class="sidebar-item">
+                            <a href="http://127.0.0.1:8000/world/" class="sidebar-link">Dashboard Énergie Mondiale</a>
+                        </li>
+                      </ul>
+                  </li>
+                  <li class="sidebar-item">
+                    <a href="http://127.0.0.1:8000/docutheque/" class="sidebar-link">
+                      <i class="fas fa-download"></i>
+                        Docuthèque
+                    </a>
+                </li>
+                
+                <li class="sidebar-item">
+                  <a href="http://127.0.0.1:8000/about/" class="sidebar-link">
+                    <i class='fas fa-info-circle'></i>
+                      About Us
+                  </a>
+              </li>
+                      </ul>
+                  </li>
+              </ul>
+          </div>
+       </aside>
+    <h1>La Visualisation de la consomation des énergies au Maroc : Un Aperçu Multisource</h1>
+    <div class="powerbi-container">
+        <iframe class="powerbi-frame" title="consommation-DashBoard ENERGY" src="https://app.powerbi.com/view?r=eyJrIjoiYjgyMjk5ODgtZmE5Yi00MjYwLThiZDMtMTFhYTM4ZjBkODU1IiwidCI6ImJiMWI3MGQ3LTUyYTEtNDYzYi05MjEzLTA5MGQzYWQyNDFkYiJ9" frameborder="0" allowFullScreen="true"></iframe>
+    </div>
+</body>
+</html>
