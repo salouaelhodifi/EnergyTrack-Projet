@@ -1,11 +1,17 @@
-from django.shortcuts import render
-from django.http import HttpResponse
+# views.py
+
+from django.core.mail import send_mail
+from django.shortcuts import render, redirect
 from django.template import loader
+from django.conf import settings
 from django.http import HttpResponse
+from django.views.decorators.csrf import csrf_exempt
+
 # Create your views here.
 def home(request):
         template= loader.get_template('home.html')
         return HttpResponse(template.render())
+    
 def actualites(request):
     return render(request, 'actualites.html')
 def about(request):
@@ -61,15 +67,7 @@ def confirmation1 (request):
     return render(request, 'confirmation..html')
 def paiement(request):
     return render(request, 'paiement.html')
-# views.py
 
-from django.core.mail import send_mail
-from django.shortcuts import render, redirect
-from django.conf import settings
-from django.http import HttpResponse
-from django.views.decorators.csrf import csrf_exempt
-
-# Create your views here.
 
 @csrf_exempt
 
